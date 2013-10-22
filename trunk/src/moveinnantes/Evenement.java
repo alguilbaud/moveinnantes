@@ -44,6 +44,7 @@ public class Evenement {
 	public boolean ajouterUtilisateur(Utilisateur u){
 		if(limite > liste_inscrits.size()){
 			liste_inscrits.add(u);
+			u.ajouterEvenement(this);
 			return true;
 		}
 		else{
@@ -52,9 +53,23 @@ public class Evenement {
 	}
 	
 	public boolean supprimerUtilisateur(Utilisateur u){
-		return liste_inscrits.remove(u);
+		boolean resultat = liste_inscrits.remove(u);
+		if (resultat){
+			u.supprimerEvenement(this);
+		}
+		return resultat;
 	}
 	
+	public TreeSet<String> getMails(){
+		TreeSet<String> ts = new TreeSet<String>();
+		for (Utilisateur i : liste_inscrits){
+			ts.add(i.getMail());
+		}
+		return ts;
+	}
 	
+	public int nbInscrits(){
+		return liste_inscrits.size();
+	}
 	
 }
