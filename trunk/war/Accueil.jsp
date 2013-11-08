@@ -8,7 +8,7 @@
  
 <html>
     <head>
-        <title>Application App Engine</title>
+        <title>accueil</title>
         <meta charset="utf-8" />
     </head>
  
@@ -16,7 +16,7 @@
     	<div class="conteneurLogo" style="text-align:center;">
     		<img style="text-align:center," src="logo2.png" alt="Logo de Move In Nantes" />
     	</div>
-        <h1>Bienvenue sur MoveInNantes!</h1>
+        <h1>Bienvenue sur Move in Nantes!</h1>
          
         <% if (userService.getCurrentUser() == null) { %>
         	<p> Prochainement, inscrivez-vous pour vos sports préférés! </p>
