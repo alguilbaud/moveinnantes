@@ -5,11 +5,19 @@
 <% UserService userService = UserServiceFactory.getUserService(); %>
  
 <!DOCTYPE html>
- 
+
+
+
 <html>
     <head>
         <title>accueil</title>
         <meta charset="utf-8" />
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    	 <!--[if lt IE 9]>-->
+     	 <script src="js/html5shiv.js"></script>
+    	 <!--<![endif]-->
+      	 <script src="http://code.jquery.com/jquery.js"></script>
     </head>
  
     <body>
@@ -26,5 +34,8 @@
             <p>Bonjour <%= userService.getCurrentUser().getNickname() %>, le site web est encore en construction mais vous pourrez prochainement vous inscrire pour vos sports favoris.</p>
             <p><a href="<%= userService.createLogoutURL("/") %>">Se déconnecter</a></p>
         <% } %>
+        <footer>
+       	<p>&copy; Company 2013</p>
+        </footer>
     </body>
 </html>
