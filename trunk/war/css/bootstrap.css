@@ -6,7 +6,40 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world by @mdo and @fat.
+ * modified by @NicoM1Alma
  */
+
+.bloc {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 0 20px #555; 
+    -webkit-box-shadow: 0 0 20px #555; 
+    box-shadow: 0 0 20px #555; 
+    width:250px;
+}
+.bloc h1 {
+    margin:0;
+    padding:5px;
+    font-size:1.5em;
+    color:#fff;
+    background-color:#9DADC6;
+    border:1px solid #8E98A4;
+    border-bottom:0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+}
+.bloc p {
+    background-color:#e5e5e5;
+    padding:5px;
+    margin:0;
+    border:1px solid #fff;
+    border-top:0;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+}
 
 .clearfix {
   *zoom: 1;
