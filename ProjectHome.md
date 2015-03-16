@@ -1,0 +1,1 @@
+Application web permettant de faire se retrouver des nantais entre eux à l'occasion d'un rassemblement sportif.
